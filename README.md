@@ -10,7 +10,7 @@ Featuring:
 - site screenshotting (uses browser's display API by default, fallbacks to [html2canvas](https://github.com/niklasvh/html2canvas) is available)
 - built-in screenshot editing (highlight & hide)
 
-<h2 align="center">Preview (<a href="https://colonelparrot.github.com/feedbackplus/demo.html">try it out!</a>)</h2>
+<h2 align="center">Preview (<a href="https://colonelparrot.github.io/feedbackplus/demos/demo.html">try it out!</a>)</h2>
 
 <p align="center">
     <img src="docs/images/demo.png">
