@@ -1,5 +1,18 @@
 # Documentation
 
+## Import
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.js" defer></script>
+```
+
+Importing html2canvas is optional, but will provide better browser support:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+```
+
 ## Snippets
 
 Instantiation:
