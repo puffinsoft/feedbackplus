@@ -64,3 +64,10 @@ textarea {
   border: 2px solid grey;
   overflow: hidden;
 }
+
+#github {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
