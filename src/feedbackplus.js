@@ -12,7 +12,7 @@ class FeedbackPlus {
     }
 
     static isRootSupported() {
-        return !!navigator?.mediaDevices && !!window.HTMLCanvasElement;
+        return !!navigator?.mediaDevices?.getDisplayMedia && !!window.HTMLCanvasElement;
     }
 
     static isSupported() {
