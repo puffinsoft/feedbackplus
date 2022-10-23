@@ -1,0 +1,66 @@
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 100px;
+  background: url("welcome_card.jpg") center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+#feedback-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input,
+label {
+  font-family: "Roboto" !important;
+}
+
+#feedback-modal h6 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.feedbackplus-modal h2 {
+  font-size: initial;
+}
+
+#screenshot-result #screenshot-delete {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1;
+  color: red;
+  background-color: white;
+}
+
+textarea {
+  resize: none !important;
+}
+
+#screenshot-button {
+  width: 100%;
+}
+
+#screenshot-result {
+  display: block;
+  position: relative;
+}
+
+#screenshot-result #screenshot-edit-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid grey;
+  overflow: hidden;
+}
