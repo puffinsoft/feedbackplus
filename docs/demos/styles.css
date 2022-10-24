@@ -71,3 +71,10 @@ textarea {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.mdl-spinner {
+  height: 20px !important;
+  width: 20px !important;
+  display: flex !important;
+  margin: auto;
+}

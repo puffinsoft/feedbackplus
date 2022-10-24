@@ -13,10 +13,12 @@
     let screenshot;
     screenshotButton.addEventListener('click', function () {
         if (FeedbackPlus.isSupported()) {
+            showScreenshotLoading()
             feedbackPlus.capture().then(bitmap => {
+                hideScreenshotLoading()
                 screenshot = bitmap;
                 updateResultCanvas()
-            })
+            }).catch(e => hideScreenshotLoading())
         } else {
             snackbar.MaterialSnackbar.showSnackbar({
                 message: 'Your device does not support this feature',
@@ -50,5 +52,15 @@
         screenshotCanvas.width = 330;
         screenshotCanvas.height = newHeight;
         screenshotCanvas.getContext('2d').drawImage(screenshot.bitmap, 0, 0, 330, newHeight)
+    }
+
+    function showScreenshotLoading(){
+        document.getElementById("screenshot-button-notloading").style.display = "none";
+        document.getElementById("screenshot-button-loading").style.display = "block";
+    }
+
+    function hideScreenshotLoading(){
+        document.getElementById("screenshot-button-notloading").style.display = "block";
+        document.getElementById("screenshot-button-loading").style.display = "none";
     }
 })();
