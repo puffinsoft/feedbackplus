@@ -17,4 +17,4 @@ Featuring:
 </p>
 
 <h3 align="center">It's easy to learn, yet extremely powerful!</h3>
-<p align="center">Want to learn it? Check our <a href="https://github.com/ColonelParrot/feedbackplus/blob/master/docs.md">documentation!</a></p>
+<p align="center">Want to learn it? Check our <a href="https://github.com/ColonelParrot/feedbackplus/wiki">documentation!</a></p>
