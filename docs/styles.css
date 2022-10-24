@@ -10,25 +10,43 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #36393F;
+  background-color: #36393f;
 }
 
 #logo {
-    width: 350px;
-    filter: invert(1);
+  width: 350px;
+  max-width: 100%;
+  filter: invert(1);
 }
 
-#hero-contents{
-    color: white;
-    text-align: center;
+#hero-contents {
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  word-break: break-word;
 }
 
-#hero-contents h4{
-    padding-top: 20px;
-    border-top: 1px solid white;
+#hero-contents a {
+  margin: 10px;
+}
+
+#hero-contents h4 {
+  padding-top: 20px;
+  border-top: 1px solid white;
 }
 
 #nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 400px) {
+  #nav {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  #nav button {
+    width: 100%;
+  }
 }
