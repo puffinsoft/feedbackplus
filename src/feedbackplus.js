@@ -174,7 +174,6 @@ class FeedbackPlus {
 
         const doneListener = () => {
             const edits = canvasContainer.querySelectorAll('.feedbackplus.feedbackplus-edit')
-            console.log(edits)
             const cloneCanvasContext = cloneCanvas.getContext('2d')
             cloneCanvasContext.lineWidth = 5
             cloneCanvasContext.strokeStyle = "#FCC934"
