@@ -4,6 +4,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeedbackPlus Demo</title>
+    <meta property="og:title" content="FeedbackPlus Demo" />
+    <meta property="og:description"
+        content="Try out the JS library that lets you screenshot & edit screenshots right out of the box." />
+    <meta property="og:url" content="https://colonelparrot.github.io/feedbackplus/demos/demo.html" />
+    <meta property="og:image" content="../images/logo.png" />
+    <meta property="og:locale" content="en_US" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet"
@@ -33,7 +39,8 @@
                 </div>
                 <h6>A screenshot will help us better understand the issue.</h6>
                 <br />
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="screenshot-button">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="screenshot-button"
+                    data-tippy-showOnInit="true" data-tippy-hideOnClick="false" data-tippy-trigger="manual">
                     <div id="screenshot-button-notloading">
                         Take Screenshot
                     </div>
@@ -74,6 +81,12 @@
         <div class="mdl-snackbar__text"></div>
         <button class="mdl-snackbar__action" type="button"></button>
     </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- main imports -->
+
     <script src="html2canvas.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.js"></script>
     <script src="script.js"></script>
