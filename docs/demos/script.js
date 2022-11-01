@@ -63,4 +63,9 @@
         document.getElementById("screenshot-button-notloading").style.display = "block";
         document.getElementById("screenshot-button-loading").style.display = "none";
     }
+
+    tippy(screenshotButton, {
+        content: 'Try it out!',
+        placement: 'right'
+    }).show()
 })();
