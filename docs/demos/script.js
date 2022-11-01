@@ -15,6 +15,7 @@
         if (FeedbackPlus.isSupported()) {
             showScreenshotLoading()
             feedbackPlus.capture().then(bitmap => {
+                tooltip.hide()
                 hideScreenshotLoading()
                 screenshot = bitmap;
                 updateResultCanvas()
@@ -43,6 +44,7 @@
         screenshot = null;
         screenshotButton.style.display = "block"
         screenshotResult.style.display = "none"
+        tooltip.show()
     })
 
     function updateResultCanvas() {
@@ -64,8 +66,9 @@
         document.getElementById("screenshot-button-loading").style.display = "none";
     }
 
-    tippy(screenshotButton, {
+    const tooltip = tippy(screenshotButton, {
         content: 'Try it out!',
         placement: 'right'
-    }).show()
+    })
+    tooltip.show()
 })();
