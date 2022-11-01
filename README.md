@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="docs/images/logo_tp.png" height="100">
+    <img src="docs/images/logo.png" height="100">
 </p>
 <h2 align="center">🔥 Spice up your feedback forms! 🔥</h2>
 
