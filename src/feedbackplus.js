@@ -2,7 +2,7 @@ class FeedbackPlus {
     constructor() {
         const modal = document.createElement('div')
         modal.classList.add('feedbackplus', 'feedbackplus-modal')
-        modal.innerHTML = `<div class="feedbackplus feedbackplus-header"><h2 style="margin:5px 20px">Edit Screenshot</h2><svg class="feedbackplus feedbackplus-close"fill=#000000 height=24px viewBox="0 0 24 24"width=24px xmlns=http://www.w3.org/2000/svg style=margin-right:10px><path d="M0 0h24v24H0V0z"fill=none /><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></div><div class="feedbackplus feedbackplus-canvas-container"><canvas class="feedbackplus feedbackplus-canvas"></canvas></div><div class="feedbackplus feedbackplus-footer"><div class="feedbackplus feedbackplus-tools"><div class="feedbackplus feedbackplus-button feedbackplus-tool feedbackplus-active feedbackplus-highlight-tool"><svg class="feedbackplus feedbackplus-tool-icon"fill=#0b57d0 height=20px viewBox="0 0 24 24"width=20px xmlns=http://www.w3.org/2000/svg enable-background="new 0 0 24 24"><g><rect fill=none height=24 width=24 /><path d="M17,5h-2V3h2V5z M15,15v6l2.29-2.29L19.59,21L21,19.59l-2.29-2.29L21,15H15z M19,9h2V7h-2V9z M19,13h2v-2h-2V13z M11,21h2 v-2h-2V21z M7,5h2V3H7V5z M3,17h2v-2H3V17z M5,21v-2H3C3,20.1,3.9,21,5,21z M19,3v2h2C21,3.9,20.1,3,19,3z M11,5h2V3h-2V5z M3,9h2 V7H3V9z M7,21h2v-2H7V21z M3,13h2v-2H3V13z M3,5h2V3C3.9,3,3,3.9,3,5z"/></g></svg> Highlight</div><div class="feedbackplus feedbackplus-button feedbackplus-tool feedbackplus-hide-tool"style=margin-left:10px><svg class="feedbackplus feedbackplus-tool-icon"fill=#0b57d0 height=20px viewBox="0 0 24 24"width=20px xmlns=http://www.w3.org/2000/svg enable-background="new 0 0 24 24"><g><rect fill=none height=24 width=24 /></g><g><g><path d=M19,5v11.17l2,2V5c0-1.1-0.9-2-2-2H5.83l2,2H19z /><path d="M2.81,2.81L1.39,4.22L3,5.83V19c0,1.1,0.9,2,2,2h13.17l1.61,1.61l1.41-1.41L2.81,2.81z M5,19V7.83l7.07,7.07L11.25,16 L9,13l-3,4h8.17l2,2H5z"/></g></g></svg> Hide</div></div><div class="feedbackplus feedbackplus-finish-actions"><div class="feedbackplus feedbackplus-button feedbackplus-cancel"style=margin-right:10px>Cancel</div><div class="feedbackplus feedbackplus-button feedbackplus-complete"style=border-color:#0b57d0;background-color:#0b57d0;color:#fff>Done</div></div></div>`
+        modal.innerHTML = `<div class="feedbackplus feedbackplus-header"><h2 style="margin:5px 20px">Edit Screenshot</h2><svg class="feedbackplus feedbackplus-close"fill=#000000 height=24px viewBox="0 0 24 24"width=24px xmlns=http://www.w3.org/2000/svg style=margin-right:10px><path d="M0 0h24v24H0V0z"fill=none /><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></div><div class="feedbackplus feedbackplus-canvas-container"><canvas class="feedbackplus feedbackplus-canvas"></canvas></div><div class="feedbackplus feedbackplus-footer"><div class="feedbackplus feedbackplus-tools"><div class="feedbackplus feedbackplus-button feedbackplus-tool feedbackplus-active feedbackplus-highlight-tool"><svg class="feedbackplus feedbackplus-tool-icon"fill=#0b57d0 height=20px viewBox="0 0 24 24"width=20px xmlns=http://www.w3.org/2000/svg enable-background="new 0 0 24 24"><g><rect fill=none height=24 width=24 /><path d="M17,5h-2V3h2V5z M15,15v6l2.29-2.29L19.59,21L21,19.59l-2.29-2.29L21,15H15z M19,9h2V7h-2V9z M19,13h2v-2h-2V13z M11,21h2 v-2h-2V21z M7,5h2V3H7V5z M3,17h2v-2H3V17z M5,21v-2H3C3,20.1,3.9,21,5,21z M19,3v2h2C21,3.9,20.1,3,19,3z M11,5h2V3h-2V5z M3,9h2 V7H3V9z M7,21h2v-2H7V21z M3,13h2v-2H3V13z M3,5h2V3C3.9,3,3,3.9,3,5z"/></g></svg> Highlight</div><div class="feedbackplus feedbackplus-button feedbackplus-tool feedbackplus-hide-tool"style="margin-left:10px;margin-right:10px"><svg class="feedbackplus feedbackplus-tool-icon"fill=#0b57d0 height=20px viewBox="0 0 24 24"width=20px xmlns=http://www.w3.org/2000/svg enable-background="new 0 0 24 24"><g><rect fill=none height=24 width=24 /></g><g><g><path d=M19,5v11.17l2,2V5c0-1.1-0.9-2-2-2H5.83l2,2H19z /><path d="M2.81,2.81L1.39,4.22L3,5.83V19c0,1.1,0.9,2,2,2h13.17l1.61,1.61l1.41-1.41L2.81,2.81z M5,19V7.83l7.07,7.07L11.25,16 L9,13l-3,4h8.17l2,2H5z"/></g></g></svg> Hide</div></div><div class="feedbackplus feedbackplus-finish-actions"><div class="feedbackplus feedbackplus-button feedbackplus-cancel"style=margin-right:10px>Cancel</div><div class="feedbackplus feedbackplus-button feedbackplus-complete"style=border-color:#0b57d0;background-color:#0b57d0;color:#fff>Done</div></div></div>`
 
         const backdrop = document.createElement('div')
         backdrop.classList.add('feedbackplus', 'feedbackplus-backdrop')
@@ -69,6 +69,7 @@ class FeedbackPlus {
             modalToolsOptions.forEach(option => {
                 option.removeEventListener('click', modalOptionListener)
             })
+            document.body.removeEventListener('keypress', undoListener)
         }
         const { modal, backdrop } = this;
         const modalToolsOptions = modal.querySelectorAll('.feedbackplus.feedbackplus-tool')
@@ -208,6 +209,18 @@ class FeedbackPlus {
         }
         cancelButton.addEventListener('click', cancelListener)
         closeButton.addEventListener('click', cancelListener)
+
+        const undoListener = (e) => {
+            if(e.ctrlKey && e.keyCode == 26){
+                const edits = canvasContainer.querySelectorAll('.feedbackplus.feedbackplus-edit')
+                const lastEdit = edits[edits.length - 1]
+                if(lastEdit){
+                    lastEdit.remove()
+                }
+            }
+        }
+
+        document.body.addEventListener('keypress', undoListener)
 
         document.body.appendChild(modal)
         document.body.appendChild(backdrop)
