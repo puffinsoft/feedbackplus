@@ -1,19 +1,16 @@
 <p align="center">
     <img src="docs/images/logo.png" height="100">
+    <br/>
+    <img src="docs/images/preview.png">
 </p>
-
 
 <h2 align="center">Preview (<a href="https://colonelparrot.github.io/feedbackplus/demos/demo.html">try it out!</a>)</h2>
 
-<p align="center">
-    <img src="docs/images/FeedbackPlus_Demo.gif">
-</p>
+| Taking a Screenshot                           | Editing screenshot                                    |
+|-----------------------------------------------|-------------------------------------------------------|
+| <img src="docs/images/FeedbackPlus_Demo.gif" width="400"> | <img src="docs/images/FeedbackPlus_Editing_Demo.gif" width="400"> |
 
-<h3 align="center">Screenshot editing</h3>
-
-<p align="center">
-    <img src="docs/images/FeedbackPlus_Editing_Demo.gif">
-</p>
+(click images to enlarge)
 
 ---
 
