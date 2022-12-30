@@ -22,6 +22,10 @@
   border: 5px solid #fcc934;
 }
 
+.feedbackplus.feedbackplus-highlight:hover {
+  background-color: rgb(122, 167, 255, 0.1);
+}
+
 .feedbackplus.feedbackplus-hide {
   position: absolute;
   background-color: black;
@@ -41,7 +45,8 @@
 }
 
 .feedbackplus.feedbackplus-hide:hover .feedbackplus.feedbackplus-tool-close,
-.feedbackplus.feedbackplus-highlight:hover .feedbackplus.feedbackplus-tool-close {
+.feedbackplus.feedbackplus-highlight:hover
+  .feedbackplus.feedbackplus-tool-close {
   display: block;
 }
 
@@ -54,7 +59,7 @@
   justify-content: space-between;
 }
 
-.feedbackplus.feedbackplus-header{
+.feedbackplus.feedbackplus-header {
   height: 50px;
   max-height: 50px;
 }
@@ -141,7 +146,7 @@
     border-radius: 0;
   }
 
-  .feedbackplus.feedbackplus-canvas-container{
-    height: calc(100% - 102px)
+  .feedbackplus.feedbackplus-canvas-container {
+    height: calc(100% - 102px);
   }
 }
