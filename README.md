@@ -1,6 +1,7 @@
 <p align="center">
     <img src="docs/images/logo.png" height="100">
     <br/>
+    <br/>
     <img src="docs/images/preview.png">
 </p>
 
@@ -12,15 +13,13 @@
 
 <p align="center">(click images to enlarge)</p>
 
----
-
 <h2 align="center">🔥 Spice up your feedback forms! 🔥</h2>
 
 Want to have better customer engagement for your next site? FeedbackPlus is your solution!
 
 Featuring:
 
-- site screenshotting (uses browser's display API by default, fallbacks to [html2canvas](https://github.com/niklasvh/html2canvas) is available)
+- site screenshotting (uses browser's display API by default, fallbacks to [html2canvas](https://github.com/niklasvh/html2canvas) if available - see [here](https://github.com/ColonelParrot/feedbackplus/wiki#browser-support-bonus))
 - built-in screenshot editing (highlight & hide)
 
 <h3 align="center">It's easy to learn, yet extremely powerful!</h3>
