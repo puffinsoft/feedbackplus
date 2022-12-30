@@ -8,9 +8,9 @@
 
 | Taking a Screenshot                           | Editing screenshot                                    |
 |-----------------------------------------------|-------------------------------------------------------|
-| <img src="docs/images/FeedbackPlus_Demo.gif" width="400"> | <img src="docs/images/FeedbackPlus_Editing_Demo.gif" width="400"> |
+| <img src="docs/images/FeedbackPlus_Demo.gif"> | <img src="docs/images/FeedbackPlus_Editing_Demo.gif"> |
 
-(click images to enlarge)
+<p align="center">(click images to enlarge)</p>
 
 ---
 
