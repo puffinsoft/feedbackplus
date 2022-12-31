@@ -15,6 +15,24 @@
   width: 100%;
   height: calc(90vh - 102px);
   position: relative;
+  scrollbar-width: thin;
+}
+
+.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+
+.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar-thumb:active{
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
 .feedbackplus.feedbackplus-highlight {
