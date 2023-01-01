@@ -4,23 +4,24 @@ body {
   margin: 0;
 }
 
+p {
+  font-family: "Roboto";
+}
+
 #hero {
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #36393f;
 }
 
 #logo {
   width: 350px;
   max-width: 100%;
-  filter: invert(1);
 }
 
 #hero-contents {
-  color: white;
   text-align: center;
   padding: 0 20px;
   word-break: break-word;
@@ -32,7 +33,7 @@ body {
 
 #hero-contents h4 {
   padding-top: 20px;
-  border-top: 1px solid white;
+  border-top: 1px solid #0e68b5;
 }
 
 #nav {
