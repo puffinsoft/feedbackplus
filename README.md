@@ -1,15 +1,27 @@
 <p align="center">
+    <a href="https://GitHub.com/ColonelParrot/feedbackplus/stargazers/"><img src="https://img.shields.io/github/stars/ColonelParrot/feedbackplus.svg?style=social&label=Star&maxAge=2592000"></a>
     <br/>
-    <img src="docs/images/logo_sm.png">
+    <br/>
+    <a href="https://www.jsdelivr.com/package/gh/ColonelParrot/feedbackplus"><img src="https://data.jsdelivr.com/v1/package/gh/ColonelParrot/feedbackplus/badge"></a>
+    <a href="https://github.com/ColonelParrot/feedbackplus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ColonelParrot/feedbackplus.svg"></a>
+    <a href="https://GitHub.com/ColonelParrot/feedbackplus/releases/"><img src="https://img.shields.io/github/release/ColonelParrot/feedbackplus.svg"></a>
+    <a href="https://GitHub.com/ColonelParrot/feedbackplus/commit/"><img src="https://badgen.net/github/last-commit/ColonelParrot/feedbackplus"></a>
+</p>
+
+<p align="center">
+    <br/>
+    <img src="docs/images/logo_sm.png"/>
     <br/>
     <br/>
     <img src="docs/images/preview.png">
 </p>
 
+
+
 <h2 align="center">Preview (<a href="https://colonelparrot.github.io/feedbackplus/demos/demo.html">try it out!</a>)</h2>
 
 | Taking a Screenshot                           | Editing screenshot                                    |
-|-----------------------------------------------|-------------------------------------------------------|
+| --------------------------------------------- | ----------------------------------------------------- |
 | <img src="docs/images/FeedbackPlus_Demo.gif"> | <img src="docs/images/FeedbackPlus_Editing_Demo.gif"> |
 
 <p align="center">(click images to enlarge)</p>
