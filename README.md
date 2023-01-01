@@ -1,4 +1,5 @@
 <p align="center">
+    <br/>
     <img src="docs/images/logo_sm.png">
     <br/>
     <br/>
