@@ -3,6 +3,8 @@
     <br/>
     <br/>
     <a href="https://www.jsdelivr.com/package/gh/ColonelParrot/feedbackplus"><img src="https://data.jsdelivr.com/v1/package/gh/ColonelParrot/feedbackplus/badge"></a>
+    <a href="https://npmjs.com/package/feedbackplus"><img src="https://badgen.net/npm/v/feedbackplus"></a>
+    <br/>
     <a href="https://github.com/ColonelParrot/feedbackplus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ColonelParrot/feedbackplus.svg"></a>
     <a href="https://GitHub.com/ColonelParrot/feedbackplus/releases/"><img src="https://img.shields.io/github/release/ColonelParrot/feedbackplus.svg"></a>
     <a href="https://GitHub.com/ColonelParrot/feedbackplus/commit/"><img src="https://badgen.net/github/last-commit/ColonelParrot/feedbackplus"></a>
@@ -36,4 +38,9 @@ Featuring:
 - built-in screenshot editing (highlight & hide)
 
 <h3 align="center">It's easy to learn, yet extremely powerful!</h3>
+
+<p align="center">
+Available via <a href="https://www.npmjs.com/package/feedbackplus">npm</a> or via <a href="https://github.com/ColonelParrot/feedbackplus/wiki#import">CDN</a>
+</p>
+
 <p align="center">Want to learn it? Check our <a href="https://github.com/ColonelParrot/feedbackplus/wiki">documentation!</a></p>
