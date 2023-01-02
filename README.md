@@ -15,7 +15,11 @@
     <img src="docs/images/logo_sm.png"/>
     <br/>
     <br/>
-    <img src="docs/images/preview.png">
+    FeedbackPlus is an open source Javascript library that allows you to add <b>screenshot taking</b> & <b>screenshot editing</b> functionality to your feedback forms.
+    <br/> <br/>
+    Available for use by <a href="https://github.com/ColonelParrot/feedbackplus/wiki#import">cdn</a> or via <a href="https://www.npmjs.com/package/feedbackplus">npm</a>
+    <br/> <br/>
+    The project is inspired by Google's <i>report an issue</i> widget, which allows you to take & edit screenshots. Under the hood, it uses the browser display API and fallbacks to <a href="https://github.com/niklasvh/html2canvas">html2canvas</a> if available (see <a href="https://github.com/ColonelParrot/feedbackplus/wiki#browser-support-bonus">here</a>)
 </p>
 
 
@@ -27,20 +31,5 @@
 | <img src="docs/images/FeedbackPlus_Demo.gif"> | <img src="docs/images/FeedbackPlus_Editing_Demo.gif"> |
 
 <p align="center">(click images to enlarge)</p>
-
-<h2 align="center">🔥 Spice up your feedback forms! 🔥</h2>
-
-Want to have better customer engagement for your next site? FeedbackPlus is your solution!
-
-Featuring:
-
-- site screenshotting (uses browser's display API by default, fallbacks to [html2canvas](https://github.com/niklasvh/html2canvas) if available - see [here](https://github.com/ColonelParrot/feedbackplus/wiki#browser-support-bonus))
-- built-in screenshot editing (highlight & hide)
-
-<h3 align="center">It's easy to learn, yet extremely powerful!</h3>
-
-<p align="center">
-Available via <a href="https://www.npmjs.com/package/feedbackplus">npm</a> or via <a href="https://github.com/ColonelParrot/feedbackplus/wiki#import">CDN</a>
-</p>
 
 <p align="center">Want to learn it? Check our <a href="https://github.com/ColonelParrot/feedbackplus/wiki">documentation!</a></p>
