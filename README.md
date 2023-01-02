@@ -22,8 +22,6 @@
     The project is inspired by Google's <i>report an issue</i> widget, which allows you to take & edit screenshots. Under the hood, it uses the browser display API and fallbacks to <a href="https://github.com/niklasvh/html2canvas">html2canvas</a> if available (see <a href="https://github.com/ColonelParrot/feedbackplus/wiki#browser-support-bonus">here</a>)
 </p>
 
-
-
 <h2 align="center">Preview (<a href="https://colonelparrot.github.io/feedbackplus/demos/demo.html">try it out!</a>)</h2>
 
 | Taking a Screenshot                           | Editing screenshot                                    |
@@ -32,4 +30,56 @@
 
 <p align="center">(click images to enlarge)</p>
 
-<p align="center">Want to learn it? Check our <a href="https://github.com/ColonelParrot/feedbackplus/wiki">documentation!</a></p>
+## Quickstart
+
+  
+For more detailed instructions, see the [documentation](https://github.com/ColonelParrot/feedbackplus/wiki)
+
+### Import
+
+npm:
+
+```
+npm i feedbackplus
+```
+
+cdn:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.js" defer></script>
+<!-- html2canvas import is optionally, but provides better browser support -->
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+```
+
+```js
+const feedbackPlus = new FeedbackPlus();
+```
+
+### Capture Screenshot
+
+<sup>...and draw to canvas</sup>
+
+```js
+const canvas = document.getElementById("canvas");
+feedbackPlus.capture().then(({ bitmap, width, height }) => {
+  canvas.width = width;
+  canvas.height = height;
+  canvas.getContext("2d").drawImage(bitmap, 0, 0);
+});
+```
+
+### Showing Edit Dialog for Screenshot
+
+```js
+feedbackPlus.showEditDialog(bitmap, function(canvas) {
+    // user completed edit
+    FeedbackPlus.canvasToBitmap(canvas).then(({ bitmap }) => {
+      drawBitmapToCanvas(bitmap);
+      feedbackPlus.closeEditDialog();
+    });
+}, function(){
+    // user cancelled edit
+    feedbackPlus.closeEditDialog();
+})
+```
