@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedbackPlus - Edit Demo</title>
+    <meta property="og:title" content="FeedbackPlus" />
+    <meta property="og:description" content="Screenshotting and screenshot editing for your feedback forms." />
+    <meta property="og:url" content="https://colonelparrot.github.io/feedbackplus/" />
+    <meta property="og:image" content="https://colonelparrot.github.io/feedbackplus/images/logo.png" />
+    <meta property="og:locale" content="en_US" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.css" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        * {
+            font-family: "Roboto";
+        }
+
+        #canvas {
+            display: none;
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+
+        #center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="center">
+        <button id="take" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Take
+            Screenshot</button>
+
+        <div id="result" style="margin-top: 20px">
+            <p id="label">Screenshot will appear here</p>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <button id="edit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Edit
+            Screenshot</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.js"></script>
+    <!-- html2canvas import is optionally, but provides better browser support -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script>
+        const feedbackPlus = new FeedbackPlus();
+        const canvas = document.getElementById('canvas')
+        const button = document.getElementById('take')
+
+        function drawBitmapToCanvas({bitmap, width, height}) {
+            const previewHeight = (height / width) * previewWidth;
+            canvas.width = previewWidth;
+            canvas.height = previewHeight;
+            canvas.getContext("2d").drawImage(bitmap, 0, 0, previewWidth, previewHeight);
+        }
+
+        let imageBitmap;
+        const previewWidth = window.innerWidth / 2 //half of user's screen, in pixels
+        button.addEventListener('click', function () {
+            feedbackPlus.capture().then(result => {
+                drawBitmapToCanvas(result)
+                canvas.style.display = "block";
+                imageBitmap = result.bitmap;
+            });
+        })
+
+        const editButton = document.getElementById('edit')
+        editButton.addEventListener('click', function () {
+            if (imageBitmap) {
+                feedbackPlus.showEditDialog(imageBitmap, function (canvas) {
+                    // user completed edit
+                    FeedbackPlus.canvasToBitmap(canvas).then(result => {
+                        drawBitmapToCanvas(result)
+                        feedbackPlus.closeEditDialog();
+                    });
+                }, function () {
+                    // user cancelled edit
+                    feedbackPlus.closeEditDialog();
+                });
+            } else {
+                alert('Take a screenshot first!')
+            }
+        })
+    </script>
+</body>
+
+</html>
