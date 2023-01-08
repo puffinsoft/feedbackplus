@@ -266,6 +266,7 @@
             feedbackHighlightTool.style.display = allowHighlight ? "inherit" : "none";
 
             const visibleTools = modal.querySelectorAll('.feedbackplus.feedbackplus-tool')
+            visibleTools.forEach(e => e.classList.remove('feedbackplus-active'))
             for (const tool of visibleTools) {
                 if (window.getComputedStyle(tool).display != "none") {
                     tool.classList.add('feedbackplus-active')
