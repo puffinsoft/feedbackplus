@@ -59,11 +59,13 @@
   position: absolute;
   background-color: white;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 5px;
   top: -20px;
   right: -30px;
   cursor: pointer;
+  height: 15px;
+  width: 15px;
 }
 
 .feedbackplus.feedbackplus-hide:hover .feedbackplus.feedbackplus-tool-close,
