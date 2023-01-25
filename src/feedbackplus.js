@@ -96,7 +96,7 @@
             function clearListeners() {
                 canvasContainer.removeEventListener('mousedown', mousedownListener)
                 canvasContainer.removeEventListener('mousemove', mouseMoveListener)
-                canvasContainer.removeEventListener('mouseup', mouseUpListener)
+                document.body.removeEventListener('mouseup', mouseUpListener)
                 canvasContainer.removeEventListener('mousedown', editDeleteMousedownListener, true)
                 doneButton.removeEventListener('click', doneListener)
                 cancelButton.removeEventListener('click', cancelListener)
@@ -141,6 +141,10 @@
             let startY;
 
             const mousedownListener = function (e) {
+                if (highlightElem) {
+                    mouseUpListener(e)
+                }
+
                 let isHighlight = feedbackHighlightTool.classList.contains('feedbackplus-active')
                 if (allowHighlight && isHighlight) {
                     highlightElem = feedbackHighlight.cloneNode(true)
@@ -199,7 +203,7 @@
                     highlightElem = null;
                 }
             }
-            canvasContainer.addEventListener('mouseup', mouseUpListener)
+            document.body.addEventListener('mouseup', mouseUpListener)
 
             const editDeleteMousedownListener = function (e) {
                 if (e.target.closest('.feedbackplus-tool-close')) {
