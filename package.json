@@ -1,6 +1,6 @@
 {
   "name": "feedbackplus",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "homepage": "https://colonelparrot.github.io/feedbackplus/",
   "description": "Screenshotting and screenshot editing for your feedback forms with JavaScript.",
   "main": "src/feedbackplus.js",
