@@ -9,6 +9,7 @@
     <br />
     <br />
     <a href="https://www.jsdelivr.com/package/gh/ColonelParrot/feedbackplus"><img src="https://data.jsdelivr.com/v1/package/gh/ColonelParrot/feedbackplus/badge"></a>
+    <a href="https://cdnjs.com/libraries/feedbackplus"><img src="https://img.shields.io/cdnjs/v/feedbackplus"></a>
     <a href="https://npmjs.com/package/feedbackplus"><img src="https://badgen.net/npm/dw/feedbackplus"></a>
     <br />
     <a href="https://github.com/ColonelParrot/feedbackplus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ColonelParrot/feedbackplus.svg"></a>
@@ -50,7 +51,7 @@ npm:
 npm i feedbackplus
 ```
 
-cdn:
+cdn via [jsDelivr](https://www.jsdelivr.com/package/gh/ColonelParrot/feedbackplus) (or with [cdnjs](https://cdnjs.com/libraries/feedbackplus)):
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.css" />
