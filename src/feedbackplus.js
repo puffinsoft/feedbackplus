@@ -26,7 +26,7 @@
         * Checks whether the base APIs needed are supported. Does not account for the presence of html2canvas
         */
         static isRootSupported() {
-            return !!navigator?.mediaDevices?.getDisplayMedia && !!window.ImageCapture && !!window.HTMLCanvasElement;
+            return !!navigator?.mediaDevices?.getDisplayMedia && !!window.HTMLCanvasElement;
         }
 
         /**
@@ -49,19 +49,22 @@
             if (FeedbackPlus.isSupported()) {
                 if (FeedbackPlus.isRootSupported()) {
                     return new Promise((resolve, reject) => {
-                        navigator.mediaDevices.getDisplayMedia({ preferCurrentTab: true }).then(stream => {
-                            setTimeout(function () {
-                                let track = stream.getVideoTracks()[0];
-                                let capture = new ImageCapture(track);
-                                capture.grabFrame().then(bitmap => {
-                                    track.stop();
-                                    resolve({
-                                        bitmap,
-                                        width: bitmap.width,
-                                        height: bitmap.height
-                                    })
-                                });
-                            }, timeout)
+                        navigator.mediaDevices.getDisplayMedia({ video: true, preferCurrentTab: true }).then(stream => {
+                            const video = document.createElement('video')
+                            setTimeout(() => { 
+                                video.srcObject = stream
+                                video.onloadedmetadata = () => {
+                                    video.play()
+                                    video.pause()
+    
+                                    const canvas = document.createElement('canvas')
+                                    canvas.width = video.videoWidth
+                                    canvas.height = video.videoHeight
+                                    canvas.getContext('2d').drawImage(video, 0, 0)
+                                    stream.getVideoTracks().forEach(track => track.stop())
+                                    FeedbackPlus.canvasToBitmap(canvas).then(bitmap => resolve(bitmap))
+                                }
+                             }, timeout)
                         }).catch(e => reject(e))
                     })
                 } else {
