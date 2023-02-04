@@ -1,4 +1,4 @@
-/*! FeedbackPlus v1.2.2 | (c) ColonelParrot and other contributors | MIT License */
+/*! FeedbackPlus v1.5.0 | (c) ColonelParrot and other contributors | MIT License */
 
 ; (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
