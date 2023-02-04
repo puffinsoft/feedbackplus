@@ -21,4 +21,6 @@
         $('.installation .option').hide()
         $(`.installation .option[data-id="${id}"]`).show()
     })
+
+    hljs.highlightAll();
 })()
