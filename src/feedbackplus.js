@@ -1,4 +1,4 @@
-/*! FeedbackPlus v1.5.0 | (c) ColonelParrot and other contributors | MIT License */
+/*! FeedbackPlus v1.6.0 | (c) ColonelParrot and other contributors | MIT License */
 
 ; (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -321,5 +321,8 @@
         }
     }
 
+    if(typeof module !== 'undefined'){
+        module.exports = { FeedbackPlus }
+    }
     return FeedbackPlus
 })));

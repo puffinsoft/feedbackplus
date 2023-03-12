@@ -47,8 +47,9 @@ You can find bare-minimum demo code for screenshotting & screenshot editing in t
 
 npm:
 
-```
-npm i feedbackplus
+```js
+$ npm i feedbackplus
+import FeedbackPlus from 'feedbackplus'
 ```
 
 cdn via [jsDelivr](https://www.jsdelivr.com/package/gh/ColonelParrot/feedbackplus) (or with [cdnjs](https://cdnjs.com/libraries/feedbackplus)):
