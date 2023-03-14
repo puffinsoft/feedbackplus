@@ -1,6 +1,6 @@
 (function () {
     const clipboardData = {
-        npm: "npm i feedbackplus\nimport FeedbackPlus from 'feedbackplus/src/feedbackplus'",
+        npm: "npm i feedbackplus\nimport FeedbackPlus from 'feedbackplus'",
         html: `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.css" />\n<script src="https://cdn.jsdelivr.net/gh/ColonelParrot/feedbackplus@master/src/feedbackplus.min.js" defer></script>`
     }
 
