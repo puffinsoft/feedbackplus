@@ -18,7 +18,7 @@
   scrollbar-width: thin;
 }
 
-.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar{
+.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
@@ -27,11 +27,11 @@
   background-color: rgb(0, 0, 0, 0.2);
 }
 
-.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar-thumb:hover{
+.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar-thumb:hover {
   background-color: rgb(0, 0, 0, 0.3);
 }
 
-.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar-thumb:active{
+.feedbackplus.feedbackplus-canvas-container::-webkit-scrollbar-thumb:active {
   background-color: rgb(0, 0, 0, 0.4);
 }
 
@@ -53,6 +53,16 @@
   background-color: rgb(0, 0, 0, 0.8);
 }
 
+.feedbackplus.feedbackplus-highlight .feedbackplus.feedbackplus-tool-close {
+  top: -17px;
+  right: -28px;
+}
+
+.feedbackplus.feedbackplus-hide .feedbackplus.feedbackplus-tool-close {
+  top: -10px;
+  right: -22px;
+}
+
 .feedbackplus.feedbackplus-tool-close {
   display: none;
   margin-right: 10px;
@@ -61,8 +71,6 @@
   border-radius: 50%;
   border: 2px solid black;
   padding: 5px;
-  top: -20px;
-  right: -30px;
   cursor: pointer;
   height: 15px;
   width: 15px;
