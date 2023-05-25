@@ -37,7 +37,7 @@
 
 .feedbackplus.feedbackplus-highlight {
   position: absolute;
-  border: 5px solid #fcc934;
+  border: 2px solid #fcc934;
 }
 
 .feedbackplus.feedbackplus-highlight:hover {
@@ -57,12 +57,12 @@
   display: none;
   margin-right: 10px;
   position: absolute;
-  background-color: white;
+  background-color: #ff0000;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #ff222295;
   padding: 5px;
-  top: -20px;
-  right: -30px;
+  top: -10px;
+  right: -22px;
   cursor: pointer;
   height: 15px;
   width: 15px;
