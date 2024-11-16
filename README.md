@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    <a href="https://GitHub.com/ColonelParrot/feedbackplus/stargazers/"><img src="https://img.shields.io/github/stars/ColonelParrot/feedbackplus.svg?style=social&label=Star"></a>
+    <a href="https://GitHub.com/puffinsoft/feedbackplus/stargazers/"><img src="https://img.shields.io/github/stars/puffinsoft/feedbackplus.svg?style=social&label=Star"></a>
     <br />
     <br />
     <a href="https://www.jsdelivr.com/package/gh/ColonelParrot/feedbackplus"><img src="https://data.jsdelivr.com/v1/package/gh/ColonelParrot/feedbackplus/badge"></a>
