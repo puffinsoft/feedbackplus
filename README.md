@@ -12,8 +12,8 @@
     <a href="https://cdnjs.com/libraries/feedbackplus"><img src="https://img.shields.io/cdnjs/v/feedbackplus"></a>
     <a href="https://npmjs.com/package/feedbackplus"><img src="https://badgen.net/npm/dw/feedbackplus"></a>
     <br />
-    <a href="https://github.com/ColonelParrot/feedbackplus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ColonelParrot/feedbackplus.svg"></a>
-    <a href="https://GitHub.com/ColonelParrot/feedbackplus/releases/"><img src="https://img.shields.io/github/release/ColonelParrot/feedbackplus.svg"></a>
+    <a href="https://github.com/puffinsoft/feedbackplus/blob/master/LICENSE"><img src="https://img.shields.io/github/license/puffinsoft/feedbackplus.svg"></a>
+    <a href="https://GitHub.com/puffinsoft/feedbackplus/releases/"><img src="https://img.shields.io/github/release/puffinsoft/feedbackplus.svg"></a>
     <a href="https://npmjs.com/package/feedbackplus"><img src="https://badgen.net/npm/v/feedbackplus"></a>
 </p>
 
@@ -24,7 +24,7 @@
 <p align="center">
 FeedbackPlus is an open source Javascript library that allows you to add <b>screenshot taking</b> & <b>screenshot editing</b> functionality to your feedback forms.
 <br/> <br/>
-Available for use by <a href="https://github.com/ColonelParrot/feedbackplus/wiki#import">cdn</a> or via <a href="https://www.npmjs.com/package/feedbackplus">npm</a>
+Available for use by <a href="https://github.com/puffinsoft/feedbackplus/wiki#import">cdn</a> or via <a href="https://www.npmjs.com/package/feedbackplus">npm</a>
 <br/> <br/>
 The project is inspired by Google's <i>report an issue</i> widget, which allows you to take & edit screenshots. Under the hood, it uses the browser display API and fallbacks to <a href="https://github.com/niklasvh/html2canvas">html2canvas</a> if available (see <a href="https://github.com/ColonelParrot/feedbackplus/wiki#browser-support-bonus">here</a>)
 </p>
@@ -39,7 +39,7 @@ The project is inspired by Google's <i>report an issue</i> widget, which allows 
 
 ## Quickstart
 
-For more detailed instructions, see the [documentation](https://github.com/ColonelParrot/feedbackplus/wiki)
+For more detailed instructions, see the [documentation](https://github.com/puffinsoft/feedbackplus/wiki)
 
 You can find bare-minimum demo code for screenshotting & screenshot editing in the [demo/simple](/docs/demos/simple/) folder
 
